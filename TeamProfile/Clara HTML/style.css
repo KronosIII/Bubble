@@ -1,0 +1,45 @@
+body {
+    background-color: #EEEEEE;
+}
+#container {
+    background-color: white;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header {
+    background-color: #66CCFF;
+    color: white;
+    text-align: center;
+}
+
+#content {
+    padding: 10px;
+}
+
+#profile {
+    width: 180px;
+    float: left;
+}
+
+#about-me {
+    width: 600px;
+    float: right;
+}
+#footer {
+    clear: both;
+    padding 10px;
+    background-color: #999999;
+}
+
+.column {
+    float: left;
+    width: 18.75%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

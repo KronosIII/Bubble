@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GEO 281: Homework Three</title>
+    <link href="style3.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwbaDlP26lWV2JcCinW2ipl56FWR3tr3c"></script>
+    <script type="text/javascript">
+        var map;
+        var currentLocation;
+        var locDenied = 0;
+        var directionsDisplay;
+        var directionsService;
+
+        //1. first show map
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('mapCanvas'), {
+                zoom: 11,
+                center: new google.maps.LatLng(43.003780, -78.781435),
+                mapTypeId: 'roadmap'
+            });
+
+            //1.1. add your current location
+            if (navigator.geolocation) {
+                // use the geolocation API and track your location as you move
+                navigator.geolocation.watchPosition(showPosition, locationError);
+            } else {
+                alert("Geolocation service not supported on this device.");
+                return;
+            }
+
+            //1.2. create icon group so that you can add them as markers or as legend to the map
+            // the following defines all of the icons, with the name indicating the description and
+            // image indicating the icon shape.
+            // The following represents a full entry. Make sure you remove or replace the entire entry
+            //    postoffice: {
+            //        name: "Post Office",
+            //        image: iconwebsite + 'post_office_maps.png'
+            //    },
+            //
+
+            var iconwebsite = "http://maps.google.com/mapfiles/kml/shapes/";
+            var othericon = "http://maps.google.com/mapfiles/kml/pal3/";
+            var icons = {
+
+                postoffice: {
+                    name: "Post Office",
+                    image: iconwebsite + 'post_office_maps.png'
+                },
+
+                Movies: {
+                    name: "Movie Theater",
+                    image: iconwebsite + 'movies_maps.png'
+                },
+                Buffalo_Light_Rail: {
+                    name: "Buffalo Light Rail Station",
+                    image: iconwebsite + 'tram_maps.png'
+                },
+                car: {
+                    name: "Car service",
+                    image: iconwebsite + 'cabs_maps.png'
+                },
+                grocery: {
+                    name: "Supermarket",
+                    image: iconwebsite + 'grocery_maps.png'
+                },
+
+                Amtrak_Train_Station: {
+                    name: "Amtrak (Train Station)",
+                    image: iconwebsite + 'subway_maps.png'
+                },
+
+                Buffalo_Niagara_Airport: {
+                    name: "Buffalo Airport",
+                    image: iconwebsite + 'airports_maps.png'
+                },
+
+                GreyHound_Bus_Station: {
+                    name: "Bus Station",
+                    image: iconwebsite + 'bus_maps.png'
+                },
+
+                Niagara_Falls: {
+                    name: "Niagara Falls (Water Falls)",
+                    image: iconwebsite + 'water_maps.png'
+                },
+
+                UB_Bookstore: {
+                    name: "University Bookstore",
+                    image: othericon + 'icon40.png'
+                },
+
+                Buffalo_General_Hospital: {
+                    name: "Hospital",
+                    image: iconwebsite + 'hospitals_maps.png'
+                }
+
+
+            };
+
+            // This creates the legend
+            var legend = document.getElementById('legend');
+            for (var key in icons) {
+                var type = icons[key];
+                var name = type.name;
+                var image = type.image;
+                var div = document.createElement('div');
+                div.innerHTML = '<img src="' + image + '"> ' + name;
+                legend.appendChild(div);
+            }
+
+            // Add the legend to the map
+            map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+
+            // 1.3. Add all of the feature markers to the map
+
+            // first define all of your places
+            var features = [{
+                position: new google.maps.LatLng(43.019140, -78.764520),
+                type: 'postoffice'
+            }, {
+                position: new google.maps.LatLng(42.981690, -78.795620),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(42.993144,-78.804649),
+                type: 'Movies'
+            }, {
+                position: new google.maps.LatLng(42.989190, -78.816050),
+                type: 'grocery'
+            }, {
+                position: new google.maps.LatLng(42.957740, -78.818530),
+                type: 'grocery'
+            }, {
+                position: new google.maps.LatLng(42.901156, -78.865650),
+                type: 'Buffalo_General_Hospital'
+            }, {
+                position: new google.maps.LatLng(42.926474, -78.832153),
+                type: 'Buffalo_General_Hospital'
+
+            }, {
+                position: new google.maps.LatLng(43.002697, -78.784630),
+                type: 'UB_Bookstore'
+
+            }, {
+                position: new google.maps.LatLng(43.092461, -79.047150),
+                type: 'Niagara_Falls'
+
+            }, {
+                position: new google.maps.LatLng(42.883200, -78.872100),
+                type: 'GreyHound_Bus_Station'
+
+            }, {
+                position: new google.maps.LatLng(42.878560, -78.873870),
+                type: 'Amtrak_Train_Station'
+
+            }, {
+                position: new google.maps.LatLng(43.103666, -78.945644),
+                type: 'Buffalo_Niagara_Airport'
+            }, {
+                position: new google.maps.LatLng(42.929830, -78.741140),
+                type: 'Buffalo_Niagara_Airport'
+
+
+            }, {
+                position: new google.maps.LatLng(42.906870, -78.727380),
+                type: 'Amtrak_Train_Station'
+
+            }, {
+                 position: new google.maps.LatLng(42.954940, -78.822180),
+                 type: 'Buffalo_Light_Rail' //Main South Campus
+            }, {
+                 position: new google.maps.LatLng(42.948050, -78.8301805),
+                 type: 'Buffalo_Light_Rail' // LaSalle
+             }, {
+                 position: new google.maps.LatLng(42.940120, -78.838580),
+                 type: 'Buffalo_Light_Rail' // Amherst Street
+             }, {
+                 position: new google.maps.LatLng(42.959270, -78.814260),
+                 type: 'Buffalo_Light_Rail' // Humboldt–Hospital
+            }, {
+                position: new google.maps.LatLng(42.930830, -78.848160),
+                type: 'Buffalo_Light_Rail' // Canisius College
+            }, {
+                 position: new google.maps.LatLng(42.910970, -78.865710),
+                 type: 'Buffalo_Light_Rail' // Utica Station
+            }, {
+                 position: new google.maps.LatLng(42.904900, -78.867490),
+                 type: 'Buffalo_Light_Rail' // Summer Best
+
+            // }, {
+            //     position: new google.maps.LatLng(42.954940, -78.822180),
+            //     type: 'Buffalo_Light_Rail'
+            // }, {
+            //     position: new google.maps.LatLng(42.954940, -78.822180),
+            //     type: 'Buffalo_Light_Rail'
+
+            }];
+
+            // function to add markers to the map
+            function addMarker(feature) {
+                var marker = new google.maps.Marker({
+                    position: feature.position,
+                    icon: icons[feature.type].image,
+                    map: map
+                });
+            }
+
+            // add all features to the map
+            var len = features.length;
+            for (var i = 0; i < len; i++) {
+                addMarker(features[i]);
+            }
+
+            //1.4. Add direction service and display to the map
+            directionsService = new google.maps.DirectionsService();
+            directionsDisplay = new google.maps.DirectionsRenderer();
+            directionsDisplay.setMap(map);
+        }
+
+        // function to show your current location
+        function showPosition(pos) {
+            lat = pos.coords.latitude;
+            lon = pos.coords.longitude;
+
+            currentLocation = new google.maps.LatLng(lat, lon);
+            map.setCenter(currentLocation);
+
+            var infowindow = new google.maps.InfoWindow({
+                map: map,
+                position: currentLocation,
+                content: "Your Location"
+            });
+        }
+
+        // function to handle location service error
+        function locationError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("Geolocation access denied");
+                    locDenied = 1;
+                    break;
+
+                case error.POSITION_UNAVAILABLE:
+                    alert("Geolocation is unavailable.");
+                    break;
+
+                case error.TIMEOUT:
+                    alert("Time out to get geolocation.");
+                    break;
+
+                default:
+                    aleart("Unknown error in geolocation.");
+                    break;
+            }
+
+            var defaultLocation = new google.maps.LatLng(43.00378, -78.8435); // university at buffalo
+            var options = {
+                map: map,
+                position: defaultLocation,
+                content: "Your location is not found. Here is University at Buffalo."
+            };
+
+            var infowindow = new google.maps.InfoWindow(options);
+            map.setCenter(defaultLocation);
+        }
+
+        // function to get the route from your current location to a destination
+
+        function calcRoute() {
+            var start; // start position
+            if (locDenied == 1) {
+                start = new google.maps.LatLng(43.003780, -78.788435); // University at Buffalo
+            } else {
+                start = currentLocation;
+            }
+
+            var end = document.getElementById("end").value;
+
+            var request = {
+                origin: start,
+                destination: end,
+                travelMode: google.maps.DirectionsTravelMode.DRIVING
+            };
+
+            directionsService.route(request, function (response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+
+        window.onload = initMap;
+    </script>
+</head>
+
+<body>
+    <h2>Sevice areas near my home</h2>
+    <div id="select">
+        <label for="end">
+            <strong>From current location to: </strong>
+        </label>
+        <select id="end" name="end" onchange="calcRoute();">
+            <option selected="selected">Select a destination</option>
+            <option value="43.019140, -78.764520">Post Office</option>
+            <option value="42.981690, -78.795620">Northtown Toyota</option>
+
+            <option value="42.989190, -78.816050">Wegsmans - Supermarket</option>
+            <option value="43.008600, -78.818760">Asian Food Market</option>
+
+            <option value="42.993025, -78.804707">AMC Movie Theaters</option>
+
+            <option value="43.002697, -78.784630">University at Buffalo North Campus Bookstore</option>
+            
+            <option value="42.901156, -78.865650">Buffalo General Hospital</option>
+            <option value="42.926474, -78.832153">Erie County Medical Center</option>
+
+            <option value="42.883200, -78.872100">Greyhound Bus Station</option>
+            
+            <option value="43.092461, -79.047150"> Niagara Falls </option>
+            <option value="43.103666, -78.945644"> Niagara Falls Airport </option>
+            <option value="42.929830, -78.741140">Buffalo - Niagara Airport</option>
+
+
+            <option value="42.906870, -78.727380">Buffalo Depew Amtrak Train Station</option>
+            <option value="42.878560, -78.873870">Buffalo Exchange Amtrak Station</option>
+
+            <option value="42.954940, -78.822180">University Rail Station</option>      
+            <option value="42.948050, -78.8301805"> LaSalle </option>
+            <option value="42.940120, -78.838580"> Amherst Street Rail Station </option>         
+            <option value="42.959270, -78.814260"> Humboldt–Hospital Rail Station </option>
+            <option value="42.930830, -78.848160"> Canisius College Rail Station</option>
+            <option value="42.910970, -78.865710"> Utica Rail Station </option>
+            <option value="42.904900, -78.867490"> "Summer's Best" Rail Station </option>
+
+        </select>
+    </div>
+
+    <div id='mapCanvas'></div>
+    <div id='legend' align='left'>
+        <h3>Legend</h3>
+    </div>
+</body>
+
+</html>

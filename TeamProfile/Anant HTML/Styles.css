@@ -1,0 +1,56 @@
+body{
+
+background: black;
+
+font-family: helvetica;
+
+}
+
+h1, h2, h3, h4{
+color:white;
+}
+
+.myimg{
+  width:300px;
+  height:300px;
+  object-fit:cover;
+  border-radius:50%;
+  border-color: white;
+  border-style: dashed;
+}
+
+ul {
+  display:table; margin:0 auto;
+  color: white;
+  font-weight: bold;
+}
+
+.btn {
+  border: white;
+  border-style: solid;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: helvetica;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:focus {outline:0;}
+
+
+/* On mouse-over */
+.btn:hover {background: lightGrey}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+
+table, th, td {
+  color: white;
+  border-color: white;
+  font-style: helvetica;
+}

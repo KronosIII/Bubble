@@ -1,0 +1,41 @@
+﻿Project Description
+
+
+Team Name
+
+Team Tree Kings
+
+
+Group Members
+
+Clara Cook, Ralph Huang, Anant Patni, Henry Dacres, Daniel Bielli
+
+
+URL of your GitHub repo
+
+https://github.com/CSE410HCI/the-tree-kings-web.git
+
+
+URL of your ZenHub board
+
+https://app.zenhub.com/workspaces/bubble-5e41bd7d11e3ce04e1a90157/board?repos=237307554
+
+
+Dispute Resolution Approach
+
+For communication we will do discord and google hangouts, which will allow us to use our UB emails. We are going to resolve our potential disagreements by doing rock paper scissors and having group discussions. We can help set expectations by communicating on discord and by trying to do things unanimously. We can also break down problems into smaller parts and be present in actually looking over each other’s work. 
+
+
+Project Description
+
+In our technology obsessed age, many people of the millennial and gen-Z populations are often accused of becoming less social, of being too absorbed by their technology. Our app, however, is a technology geared towards this age group that serves as a facilitator of social interaction. It is true that sometimes we do not know what or whom is right outside our very door, but with Bubble, the fear one must overcome to combat one’s social anxiety only to realize that you have nothing in common, will be completely superseded by the app that opens new doors to new friendships.
+
+Bubble is a location-based social media product that allows the users to venture into other places from any location in the world. Want to find out what’s going on nearby? Excited to meet new people with similar/not similar interests? Hungry and not sure where to eat? Bubble comes to the rescue with an all-in-one application that will act as your social hub. Bubble will be available for the Web and Mobile Platforms - iOS & Android. 
+
+
+Describing a typical user & how they use the product
+
+We are gearing our product towards people willing to make new friends and explore new places. Our target age has been decided as 18+, and location is universal. The typical users would like to share where they have been and recommend places to go. This product is not gender-specific, and welcomes users from all backgrounds to celebrate and share their life.
+
+As users who want their voices heard, they can get to know what other people are talking about, and can also share their thoughts with others. New users to the platform can experience an onboarding process that will take provide them with a tutorial. Users that like to set up events can organize meetups, and get an idea of where to hang out. 
+Users can also recommend places to other people, so that the entire user base of the product can explore new places to visit. The users can also use the product to save/favorite the places they have been to, so they can revisit them when they are home. Users can also use this product to find new people with similar interests, and can reach out to them.

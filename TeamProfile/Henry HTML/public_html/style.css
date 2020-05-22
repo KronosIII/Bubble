@@ -1,0 +1,16 @@
+h1{
+	font-family: Arial, sans-serif;
+    margin:0 0 20px 0;
+	color: #8c9714;
+	font-size: 30px;
+}
+
+h2, p, li, dl{
+	font-family: "Courier New", monospace;
+	font-size: 16px;
+}
+
+img{
+    margin: 0 30px 18px 0;
+}
+

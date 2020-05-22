@@ -1,0 +1,4624 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Raleway|Zilla+Slab&display=swap");
+
+/* Global CSS */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Fredoka one";
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Zilla Slab";
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-size: 20px;
+}
+
+p {
+  font-family: "Raleway";
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/*Welcome.js CSS */
+
+#welcomeCenter {
+  width: 100%;
+  height: 100%;
+  background-color: cornflowerBlue;
+}
+
+#welcomepage {
+  width: 100%;
+  height: 100%;
+  background-color: cornflowerblue;
+}
+
+.welcomeScreenButton {
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: cornflowerblue;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.welcomeScreenImage {
+  width: 350px;
+  height: 350px;
+}
+
+.allWelcomeButtons{
+  width: 350px;
+  height: 100%;
+  background-color: cornflowerblue;
+}
+
+.welcome-button span {
+  cursor: pointer;
+  /* // display: inline-block; */
+  position: relative;
+  transition: 0.5s;
+}
+
+.welcome-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.welcome-button:hover span {
+  padding-right: 25px;
+}
+
+.welcome-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  transition: transform 0.2s; /* Animation */
+  /* border: dashed; */
+  /* border-color: white; */
+}
+
+.image:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media screen and (max-width: 350px) {
+  .welcomeScreenImage {
+    width: 100%;
+    height: 100%;
+  }
+  .allWelcomeButtons{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* StyleGuide.js CSS */
+.style-guide-p{
+  font-family: "raleway";
+  font-size: 20px;
+}
+
+
+.styleGuideVideo {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.styleGuideImageSize {
+  height: 380px;
+  width: 700px;
+}
+
+.spacing {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.styles-guide {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.style-container {
+  margin: 5% 32% 0% 32%;
+}
+
+.style-guide-h1 {
+  font-size: 50px;
+  font-family: "Zilla Slab";
+}
+
+.style-guide-h2 {
+  font-size: 40px;
+  color: cornflowerblue;
+  font-family: "Zilla Slab";
+}
+
+.style-guide-h3 {
+  font-weight: 5;
+  font-size: 20px;
+  font-family: "Raleway";
+}
+
+.fredoka {
+  font-family: "Fredoka One";
+  font-size: 50px;
+}
+
+.zilla {
+  font-family: "Zilla Slab";
+  font-family: 40px;
+}
+
+.raleway {
+  font-family: "Raleway";
+  font-family: 20px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.fontColorCornflowerBlue {
+  color: cornflowerblue;
+}
+
+.fontColorLightGray {
+  color: lightgray;
+}
+
+.fontColorDarkGray {
+  color: rgb(78, 72, 72);
+}
+
+.fontColorWhite {
+  color: white;
+}
+
+.fontColorBlack {
+  color: black;
+}
+
+.style-guide-li {
+  list-style: none;
+  font-weight: 5;
+  font-size: 20px;
+}
+
+.style-guide-ul {
+  padding: 0;
+  margin: 0;
+}
+
+.subheading {
+  font-weight: bold;
+}
+
+.subheading-spacing {
+  padding-top: 7vh;
+}
+
+.style-guide-footer {
+  font-family: "raleway";
+  background: cornflowerblue;
+  margin-top: 10vh;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  text-align: center;
+}
+
+.fontContainer {
+  background: rgb(236, 154, 154);
+}
+
+.module {
+  border-radius: 20%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.color-block {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+#cornflowerBlue {
+  background-color: cornflowerblue;
+}
+
+#lightGray {
+  background-color: lightgray;
+}
+
+#darkGray {
+  background-color: rgb(78, 72, 72)
+}
+
+#white {
+  background-color: rgb(255, 255, 255);
+}
+
+#black {
+  background-color: rgb(0, 0, 0);
+}
+
+
+/* Login.js CSS Section */
+#form-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#square-one {
+  flex: 0 0 65%;
+  background-color: cornflowerBlue;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+#square-one:hover{
+  box-shadow: 0.3vw 0.7vh rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+#loginLinkerCont {
+  height: 100%;
+}
+
+#bg-pic {
+  margin: 0;
+  positon: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(20%);
+}
+
+#square-two {
+  flex: 0 0 35%;
+}
+
+#loginErrorMessage {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: -20px;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Zilla Slab";
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#input-container {
+  border: solid;
+}
+
+#login-form {
+  margin: auto;
+  margin-top: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 10vh;
+  padding-top: 5vh;
+  border-radius: 5%;
+  background-color: cornflowerBlue;
+  box-shadow: 0.3vw 0.7vh rgba(0, 0, 0, 0.6);
+}
+
+#title {
+  text-align: center;
+  color: white;
+}
+
+.welcome-button {
+  position: relative;
+  z-index: 1.5;
+}
+
+#submit-button {
+  border: none;
+  margin: auto;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 0.5vw;
+  padding: 1vh 3vw 1vh 3vw;
+  cursor: pointer;
+  font-family: raleway;
+}
+
+#submit-button:hover{
+  color: cyan;
+}
+
+#forgot-containers {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.input-box {
+  margin: auto;
+  text-align: center;
+}
+
+.input-deco {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  padding: 0.5vh 1vw 0.5vh 1vw;
+  border-radius: 2vw;
+}
+
+.forgot-links {
+  margin: 1vh 1vw 1vh 1vw;
+  color: black;
+}
+
+.forgot-links:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+#loginSignup {
+  text-align: center;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 0.5vw;
+  font-size: 12px;
+}
+
+#loginSignup:hover {
+  cursor: pointer;
+  color: cyan;
+}
+
+@media screen and (max-width: 1400px) {
+  #square-one {
+    flex: 0 0 50%;
+    text-align: center;
+  }
+
+  #bg-pic {
+    margin: 0;
+    positon: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(20%);
+  }
+
+  #square-two {
+    flex: 0 0 50%;
+  }
+
+  #login-form {
+    margin: auto;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    border-radius: 5%;
+    background-color: cornflowerBlue;
+    box-shadow: 0.3vw 0.7vh rgba(0, 0, 0, 0.6);
+  }
+
+  .input-deco {
+    font-size: 1.5em;
+    width: 70%;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 2vw;
+  }
+
+  .forgot-links {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #square-one {
+    flex: 0 0 50%;
+    text-align: center;
+  }
+
+  #bg-pic {
+    margin: 0;
+    positon: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(9.5%);
+  }
+
+  #square-two {
+    flex: 0 0 50%;
+  }
+
+  #login-form {
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    border-radius: 5%;
+    background-color: cornflowerBlue;
+    box-shadow: 0.3vw 0.7vh rgba(0, 0, 0, 0.6);
+  }
+
+  .input-deco {
+    font-size: 1.5em;
+    width: 70%;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 2vw;
+  }
+
+  .forgot-links {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #form-container {
+    background-color: cornflowerBlue;
+  }
+
+  #square-one {
+    display: none;
+  }
+
+  #square-two {
+    flex: 0 0 100%;
+  }
+
+  #login-form {
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    border-radius: 5%;
+    background-color: rgba(221,221,221,0.7);
+    box-shadow: 0.3vw 0.7vh rgba(0, 0, 0, 0.6);
+  }
+
+  #title {
+    text-align: center;
+    color: black;
+  }
+
+  .forgot-links {
+    margin: 1vh 1vw 1vh 1vw;
+    color: cornflowerBlue;
+  }
+
+  .input-deco {
+    font-size: 1.5em;
+    width: 70%;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 2vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #form-container {
+    background-color: cornflowerBlue;
+  }
+
+  #square-one {
+    display: none;
+  }
+
+  #square-two {
+    flex: 0 0 100%;
+  }
+
+  #login-form {
+    margin: auto;
+    margin-top: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    border-radius: 5%;
+    background-color: rgba(221,221,221,0.7);
+    box-shadow: 0.3vw 0.7vh rgba(0, 0, 0, 0.6);
+  }
+
+  #title {
+    text-align: center;
+    color: black;
+  }
+
+  .forgot-links {
+    margin: 1vh 1vw 1vh 1vw;
+    color: cornflowerBlue;
+    font-size: 0.9em;
+  }
+
+  .input-deco {
+    font-size: 0.8em;
+    width: 70%;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 2vw;
+  }
+}
+
+
+/*
+the app category is for what the whole root page looks like this is relevant thru the whole className*/
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: white;
+  margin: 0;
+}
+
+#copyright {
+  font-family: 'Zilla Slab', serif;
+  text-align: center;
+}
+
+/* Setting.js css section */
+.settingsTitle {
+  float: left;
+  width: 150px;
+  padding-top: 80px;
+  margin-left: 60px;
+  font-size: 50px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.profileImage {
+  width: 400px;
+  height: 400px;
+  float: center;
+  /* margin-top: 150px; */
+  border-radius: 50%;
+}
+
+.editProfilePicture {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 50px;
+  top: 570px;
+  margin-left: -330px;
+  font-weight: normal;
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.editProfilePicture:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px;
+  border-color: lightgray;
+}
+
+#editAvatarButton {
+  margin-top: 100px;
+  width: 238px;
+  height: 50px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  font-size: large;
+}
+
+#editAvatarButton:hover {
+  background-color: white;
+  color: black;
+}
+
+#settingsEditProfile{
+  margin: 0px;
+  float: center;
+  position: relative;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: large;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+#settingsEditProfile:hover {
+  background-color: white;
+  color: black;
+}
+
+.settingsFieldsDiv {
+  margin-top: 200px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 200px;
+  font-weight: normal;
+  color: black;
+  height: auto;
+  font-size: x-large;
+  font-family: 'Zilla Slab', serif;
+  margin: 0px;
+}
+
+.privacyPolicy {
+  font-weight: bold;
+  color: black;
+}
+
+.deleteAccount {
+  color: red;
+  font-weight: normal;
+  position: relative;
+  z-index: 1.5;
+  text-decoration: none;
+}
+
+.signOut {
+  color: red;
+  font-weight: bold;
+}
+
+.settingsText {
+  font-weight: normal;
+  color: black;
+}
+
+@media screen and (max-width: 1353px) {
+  .settingsFieldsDiv {
+    padding-top: 0px;
+    float: left;
+    margin-right: 200px;
+    font-weight: normal;
+    color: black;
+    height: 10px;
+    font-size: x-large;
+    font-family: 'Zilla Slab', serif;
+  }
+}
+
+@media screen and (max-width: 1212px) {
+  #settingsContainer{
+    width: 100%;
+    height: 100%;
+  }
+
+  .settingsTitle {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding-top: 0%;
+    margin: 0 auto;
+    margin-left: 0%;
+    font-size: 50px;
+    font-family: 'Fredoka One', cursive;
+  }
+
+  .profileImage {
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    border-radius: 50%;
+  }
+
+  .editProfilePicture {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: -570px;
+    margin-left: 510px;
+  }
+
+  .settingsFieldsDiv{
+    position: relative;
+    text-align: center;
+    padding-top: 0px;
+    float: none;
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 85%;
+    font-size: x-large;
+    font-family: 'Zilla Slab', serif;
+  }
+}
+
+.whole {
+  height: 100%;
+}
+
+/* what the navbar looks like */
+.navbar {
+  background-color: cornflowerblue;
+  height: 50px;
+  width: 100%;
+  color: whitesmoke;
+  margin-bottom: -70px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  position: relative;
+}
+
+@media screen and (max-width: 350px) {
+  .navbar {
+    font-size: 25px;
+  }
+}
+
+/* what the sidebar looks like */
+.SideBar {
+  background: lightgray;
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .SideBar {
+    width: 100px;
+  }
+}
+
+/* SettingsIcon on navbar */
+#settingIcon {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  float: right;
+  padding: 0px;
+  border-radius: 50%;
+  /* cursor: pointer; */
+  position: relative;
+  z-index: 6;
+}
+
+#settingIcon:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  #settingIcon {
+    right: 30px;
+  }
+}
+
+/* the following button, hammy, and unhammy are the hamburger button */
+.hamburger-button {
+  margin: 0px;
+  font-size: 18px;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border: 50;
+  box-shadow: 1px 1px 0px 2px rgba (0, 0, 0, 0.3);
+  background: white;
+  cursor: pointer;
+}
+
+#hammy {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+  #hammy {
+    width: 100px;
+  }
+}
+
+#unhammy {
+  position: relative;
+  z-index: 3;
+}
+
+/* for the logout button in the sidebar */
+.logoutButton {
+  background: red;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .logoutButton {
+    width: 80px;
+  }
+}
+
+/* the standard buttons in the sidebar */
+#menuButton {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: large;
+  cursor: pointer;
+}
+
+#menuButton:hover {
+  border-right: #4e4848;
+  border-bottom: #4e4848;
+}
+
+@media screen and (max-width: 600px) {
+  #menuButton {
+    width: 80px;
+  }
+}
+
+/* the grey background present in making the posts Post.jsx */
+#post {
+  margin: 100px;
+  background-color: lightgray;
+  opacity: 0.8;
+  border-radius: 25px;
+  width: 80%;
+  height: 400px;
+  display: inline-block;
+}
+
+/* the area for making a post in Post.jsx */
+#postBox {
+  float: center;
+  margin: 20px 0px;
+  width: 600px;
+  height: 300px;
+  resize: none;
+  font-size: large;
+}
+
+@media screen and (max-width: 850px) {
+  #post {
+    width: 400px;
+  }
+
+  #postBox {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #post {
+    margin-left: -50px;
+    width: 250px;
+  }
+
+  #postBox {
+    margin-left: 70px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-height: 560px) and (max-width: 350px){
+  #post {
+    margin-top: 0px;
+  }
+}
+
+
+/* for what a finished post looks like in FinishedPost.jsx, OtherPersonPost.jsx */
+#finishedPost {
+  margin-top: 40px;
+  /* margin-left: 300px; */
+  background-color: lightgray;
+  opacity: 0.8;
+  border-radius: 25px;
+  width: 100%;
+  height: 400px;
+float: left;
+}
+
+@media screen and (max-width: 1000px) {
+  #finishedPost {
+    width: 100%;
+    padding-bottom: 20px;
+    height: fit-content;
+  }
+}
+
+#cancelMakePost {
+  margin: 0px;
+  font-size: 18px;
+  height: 50px;
+  width: 30%;
+  border-radius: 10px;
+  border: 50;
+  box-shadow: 1px 1px 0px 2px rgba (0, 0, 0, 0.3);
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+#cancelMakePost:hover {
+  background-color: white;
+  color: black;
+  border-color: red;
+}
+
+/* for sending a made post in Post.jsx */
+#sendButton {
+  background-color: cornflowerblue;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  border-radius: 8px;
+  color: white;
+  width: 150px;
+  height: 45px;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: right;
+  margin-right: 45px;
+  font-size: large;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  float: right;
+  color: white;
+  }
+
+.wrapper span {
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.wrapper span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -10px;
+  right: -100px;
+  transition: 0.5s;
+}
+
+.wrapper:hover span {
+  padding-right: 25px;
+}
+
+.wrapper:hover span:after {
+  opacity: 1;
+  right: -120px;
+}
+/* where the send button's code stops */
+
+/* file button for making a post in Post.jsx */
+#fileButton {
+  width: 15%;
+  height: 45px;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  transition: all 0.5s;
+  cursor: pointer;
+  float: left;
+  margin-top: 40px;
+  padding: 0px 50px;
+  padding-right: 50px;
+  margin-left: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: large;
+}
+
+#fileButton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* file button for making a post in Post.jsx */
+#makeFileButton {
+  width: 15%;
+  height: 45px;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  transition: all 0.5s;
+  cursor: pointer;
+  float: left;
+  padding: 0px 50px;
+  padding-right: 50px;
+  margin-left: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: large;
+}
+
+#makeFileButton:hover {
+  background-color: white;
+  color: black;
+}
+/* end of file button code */
+
+#fixfileButton {
+  width: 40%;
+  height: 45px;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  transition: all 0.5s;
+  cursor: pointer;
+  float: left;
+  padding: 0px 0px;
+  padding-right: 50px;
+  margin-left: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: large;
+}
+
+#fixfileButton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* @media screen and (max-width: 350px) {
+  #fixfileButton {
+    width: 30%;
+  }
+} */
+
+/* Privacy settings button in Post.jsx */
+.dropbtn {
+  background-color: white;
+  color: black;
+  width: 150px;
+  height: 45px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-left: 45px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: cornflowerblue;
+}
+
+.makeFolder {
+  padding-right: 20px;
+  margin-left: -20px;
+}
+
+.privacy {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: -4px;
+}
+
+.privacyOptions {
+  margin-left: -400px;
+}
+
+@media screen and (max-width: 850px) {
+  .privacyOptions {
+    margin-left: -200px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .privacyOptions {
+    margin-left: 40px;
+  }
+
+  .privacy {
+    margin-left: 100px;
+  }
+
+  #postBox {
+    margin-top: -40px;
+  }
+
+  #sendButton {
+    margin-left: 100px;
+  }
+
+}
+
+.selectedPrivacy {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border: solid cornflowerblue 8px;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.nonselectedPrivacy {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  /* border: solid cornflowerblue 8px; */
+  border-radius: 8px;
+  margin: 5px;
+}
+
+/* making the arrow to signal it being a dropdown in Post.jsx in privacy settings */
+/* i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-top: -30px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+} */
+/* end of dropdown signifier */
+
+/* @media screen and (max-width: 850px) {
+.dropbtn {
+  margin-left: -20px;
+  width: 100px;
+  font-size: small;
+}
+
+  #makeFileButton {
+    padding-right: 10px;
+  }
+
+  .makeFolder {
+    margin-left: -40px
+  }
+
+  .privacy {
+    margin-left: 0px;
+  }
+
+  i {
+    margin-top: -25px;
+  }
+} */
+
+/* @media screen and (max-width: 680px) {
+  .dropbtn {
+    margin-left: -20px;
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+    #makeFileButton {
+      padding-right: 10px;
+      height: 38px;
+      margin-top: -2px;
+    }
+
+    .makeFolder {
+      margin-left: -40px;
+      height: 40px;
+      width: 40px;
+    }
+
+    i {
+      margin-right: -30px;
+      margin-left: 5px;
+    }
+
+    #sendButton {
+      margin-top: -2px;
+      height: 38px;
+    }
+
+    .wrapper span:after {
+      top: -17px;
+    }
+  } */
+
+  /* @media screen and (max-width: 640px) {
+    .dropbtn {
+      margin-left: 50px;
+      width: 80px;
+      height: 30px;
+      font-size: 10px;
+    }
+
+      #sendButton {
+        margin-top: 10px;
+        margin-right: 5px;
+        height: 38px;
+      }
+
+      .wrapper span:after {
+        top: -17px;
+      }
+    } */
+
+
+/* end of privacy settings dropdown */
+
+
+/* Part of navbar.jsx... avatar in the navbar */
+#avatar {
+  margin: 35px;
+  width: 70px;
+  height: 70px;
+  float: right;
+  padding: 0px;
+  border-radius: 50%;
+  /* cursor: pointer; */
+  position: relative;
+  z-index: 5;
+}
+
+/* #avatar:hover{
+  cursor: pointer;
+} */
+
+@media screen and (max-width: 600px) {
+  #avatar {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* end of avatar in navbar */
+
+/* Bio.jsx in ProfilePage.jsx */
+.bio {
+  float: left;
+  width: 15%;
+  margin-left: 20px;
+  margin-top: 100px;
+  font-family: 'Zilla Slab', serif;
+}
+
+@media screen and (max-width: 1205px) {
+  .bio {
+    margin: 80px;
+    margin-left: 50px;
+    width: 50%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bio {
+    margin-left: 10px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .bio {
+    margin-left: 10px;
+    margin-top: 150px;
+    width: 95%;
+  }
+}
+
+.myBio {
+  float: left;
+  height: fit-content;
+  width: 15%;
+  margin-left: 20px;
+  margin-top: 100px;
+  font-family: 'Zilla Slab', serif;
+}
+
+@media screen and (max-width: 1486px) {
+
+}
+
+@media screen and (max-width: 1205px) {
+  .myBio {
+    margin: 80px;
+    margin-left: 50px;
+    width: 50%;
+    margin-bottom: -100px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myBio {
+    margin-left: 10px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .myBio {
+    margin-left: 5px;
+    margin-top: 70px;
+    width: 95%;
+  }
+}
+
+/* the form of the bio in Bio.jsx in ProfilePage.jsx */
+#bio {
+  background-color: lightgray;
+  opacity: 0.8;
+  border-radius: 25px;
+  width: 100%;
+  height: 400px;
+}
+
+#mybio {
+  background-color: lightgray;
+  opacity: 0.8;
+  border-radius: 25px;
+  width: 115%;
+  height: 220px;
+}
+
+/* @media screen and (max-width: 1486px) {
+  #bio {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1393px) {
+  #bio {
+    height: 225px;
+  }
+} */
+
+/* the profile picture in the bio of Bio.jsx in ProfilePage.jsx */
+#avatarBio {
+  margin: 20px;
+  width: 70px;
+  height: 70px;
+  float: left;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* name of the user in the bio of Bio.jsx in ProfilePage.jsx */
+#name {
+  display: inline-table;
+  font-weight: bolder;
+}
+
+.name {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1393px) {
+  #name {
+    font-size: 25px;
+  }
+}
+
+
+
+/* the actual bio in the bio of Bio.jsx in ProfilePage.jsx */
+#bioScript {
+  margin-left: 25px;
+  margin-right: 25px;
+  float: left;
+}
+
+@media screen and (max-width: 1205px) {
+  #bio {
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 25px;
+    width: 100%;
+    height: 270px;
+  }
+
+  #mybio {
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 25px;
+    width: 100%;
+    height: 170px;
+  }
+
+  /* name of the user in the bio of Bio.jsx in ProfilePage.jsx */
+  #name {
+    display: inline-table;
+    font-weight: bolder;
+    margin-left: 10px;
+  }
+
+  /* the actual bio in the bio of Bio.jsx in ProfilePage.jsx */
+  #bioScript {
+    margin-left: 12px;
+    margin-right: 25px;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  /* the actual bio in the bio of Bio.jsx in ProfilePage.jsx */
+  #bioScript {
+    width: 30%;
+    margin-left: 12px;
+    margin-right: 25px;
+    float: left;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #bio {
+    margin-top: -100px;
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 25px;
+    width: 50%;
+    height: 250px;
+  }
+
+  #mybio {
+    margin-top: -100px;
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 25px;
+    width: 50%;
+    height: 250px;
+  }
+
+  /* name of the user in the bio of Bio.jsx in ProfilePage.jsx */
+  #name {
+    display: inline-table;
+    font-weight: bolder;
+    margin-left: 10px;
+  }
+
+  /* the actual bio in the bio of Bio.jsx in ProfilePage.jsx */
+  #bioScript {
+    display: table;
+    margin-left: 12px;
+    margin-right: 25px;
+    float: left;
+  }
+}
+
+
+
+@media screen and (max-width: 450px) {
+  #bio {
+    margin-top: 50px;
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 25px;
+    width: 100%;
+    height: 150px;
+  }
+
+  #mybio {
+    margin-top: 50px;
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 25px;
+    width: 100%;
+    height: 150px;
+  }
+}
+
+/* the edit button in the bio of Bio.jsx in ProfilePage.jsx */
+#editProfile {
+  height: 50px;
+  width: 100px;
+  float: right;
+  margin-right: 10px;
+  background-color: rgb(87, 135, 255);
+  color: white;
+  border-radius: 8px;
+  font-size: large;
+  font-family: 'Raleway', sans-serif;
+}
+
+#editProfile:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 357px) {
+  #editProfile {
+    margin-top: -37px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #editProfile {
+    margin-top: -37px;
+  }
+}
+/* end of edit button code */
+
+/* the button pressed to make to open the ability to make a post in PostPopUp.jsx, which is in ProfilePage.jsx and LogoSide.jsx */
+#postingButton {
+  margin-top: 300px;
+  margin-left: 20px;
+  width: 17%;
+  height: 50px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  position: relative;
+  z-index: 1.5;
+  font-size: large;
+  color: white;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+@media screen and (max-width: 1486px) {
+  #postingButton {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  #postingButton {
+    width: 220px;
+    margin-top: 230px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  #postingButton {
+    /* width: 80px;
+    height: fit-content;
+    margin-left: 10px;
+    margin-top: 180px; */
+  }
+}
+@media screen and (max-width: 600px) {
+  #postingButton {
+    height: 50px;
+    top: 135px;
+    z-index: 1;
+    /* margin-left: 100px; */
+  }
+}
+
+
+#postingButton:hover {
+  background-color: white;
+  color: black;
+}
+
+#profilePostingButton {
+  margin-top: 300px;
+  margin-left: 20px;
+  width: 15%;
+  height: 50px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  position: relative;
+  z-index: 1.5;
+  font-size: large;
+  color: white;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#profilePostingButton:hover {
+  background-color: white;
+  color: black;
+}
+/* end of button that opens make a post tab */
+
+
+#postOverlay {
+  width: 100%;
+  background-color: red;
+}
+/* the placeholder for the picture someone would post, found in FinishedPost.jsx and OtherPersonPost.jsx */
+#placeholderPic {
+  padding-top: 75px;
+  margin-left: -45%;
+  width: 100%;
+}
+
+#myPlaceholderPic {
+  padding-top: 75px;
+  margin-left: -45%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  #placeholderPic {
+    width: 180%;
+    height: auto;
+    padding-top: 0px;
+    margin-top: -50px;
+    margin-left: -40%;
+  }
+  #myPlaceholderPic {
+    width: 180%;
+    height: auto;
+    padding-top: 0px;
+    margin-top: -50px;
+    margin-left: -40%;
+  }
+}
+
+/* edit buttons for the user's finished post (delete and edit) */
+#fixPost {
+  width: 60%;
+  margin-left: -70%;
+  margin-top: 335px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+  #fixPost {
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #fixPost {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* the header for each post, containing the first and last name and an avatar in FinishedPost.jsx and OtherPersonPost.jsx*/
+#postHeader {
+  background-color: rgb(87, 135, 255);
+  border-radius: 25px;
+  text-indent: 25px;
+  justify-content: unset;
+  font-family: 'Zilla Slab', serif;
+}
+
+@media screen and (max-width: 1000px) {
+  #postHeader{
+    width: 100%;
+  }
+}
+
+/* header for comments section in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx*/
+#commentsHeader {
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(78, 72, 72);
+  height: 35px;
+  width: 100%;
+  float: right;
+  font-size: 20px;
+  font-family: 'Zilla Slab', serif;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: sticky;
+  /* display: none; */
+}
+
+@media screen and (max-width: 1000px) {
+  #commentsHeader {
+    width: 97.5%;
+  }
+}
+
+/* rectangle for the comments section in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+.rectangle {
+  height: 300px;
+  width: 40%;
+  background-color: white;
+  border-radius: 25px;
+  float: right;
+  margin-right: 30px;
+  margin-top: -310px;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .rectangle {
+    width: 85%;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .rectangle {
+    width: 85%;
+    margin-right: 20px;
+    margin-top: 0px;
+  }
+}
+
+/* caption for a post in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+#caption {
+  display: none;
+}
+
+
+
+/* outline for an individual comment in Comment.jsx in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+#commentRectangle {
+  height: 50px;
+  width: 250px;
+  background-color: white;
+  opacity: 0.5;
+  margin-left: 10px;
+  float: left;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  #commentRectangle {
+    width: 100%;
+  }
+}
+
+/* the person commenting for an individual comment in Comment.jsx in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+#commenter {
+  font-weight: bold;
+  font-family: 'Zilla Slab', serif;
+  margin-top: 0px;
+  margin-left: -10px;
+  font-size: 15px;
+  position: relative;
+  z-index: 5;
+}
+
+/* individual comment in Comment.jsx in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+#literalComment {
+  font-size: 12px;
+  margin-top: -15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* outline to separate the comments from the comments header in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+#comments {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  float: right;
+  /* margin-right: 0px;
+  margin-top: 0px; */
+  overflow: scroll;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  #comments {
+    width: 100%;
+  }
+}
+
+/* textbox to make a comment in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+#commentArea {
+  margin-top: 10px;
+  resize: none;
+  width: 55%;
+  float: left;
+  /* margin-left: -10%; */
+}
+
+@media screen and (max-width: 1000px) {
+  #commentArea {
+    width: 65%;
+  }
+}
+
+.commenting {
+  width: 100%;
+}
+
+/* to send what was written in textbox in CommentsSection.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+#sendComment {
+  background-color: rgb(87, 135, 255);;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  border-radius: 8px;
+  color: white;
+  width: 150%;
+  height: 45px;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: right;
+  margin-top: -8px;
+  font-size: large;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapperComment {
+  float: right;
+  color: white;
+  width: 30%;
+  }
+
+.wrapperComment span {
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.wrapperComment span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  /* top: -10px;
+  right: -100px; */
+  transition: 0.5s;
+}
+
+.wrapperComment:hover span {
+  padding-right: 25px;
+}
+
+.wrapperComment:hover span:after {
+  opacity: 1;
+  right: -30px;
+}
+/* end of comment send button */
+
+/* where the list of friends goes on the page in FriendsList.jsx in ProfilePage.jsx, FeedPage.jsx and OtherPersonProfilePage.jsx */
+#friendListOutline {
+  height: 680px;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  margin-top: -420px;
+  margin-left: 30px;
+  float: right;
+  /* margin-top: -480px; */
+  margin-right: 30px;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 1285px) {
+  #friendListOutline {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  #friendListOutline {
+    margin-top: -520px;
+    /* width: 25%; */
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  #friendListOutline {
+    /* margin-top: -480px; */
+    /* width: 20%; */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #friendListOutline {
+    margin-top: -400px;
+    /* width: 40%; */
+    margin-left: 100%;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  #friendListOutline {
+    margin-top: 0px;
+    /* width: 40%; */
+    margin-left: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #friendListOutline {
+    /* display: none; */
+  }
+}
+
+@media screen and (min-height: 1350px) {
+  #friendListOutline {
+    margin-top: -1000px;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 200px;
+  }
+}
+
+/* where it says friends in FriendsList.jsx in ProfilePage.jsx, FeedPage.jsx and OtherPersonProfilePage.jsx */
+#friendsHeader {
+  font-size: 150%;
+  height: 50px;
+  margin-bottom: 20px;
+  font-family: 'Fredoka One', cursive;
+  background-color: none;
+  border: none;
+  position: relative;
+  z-index: 1.5;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .profilePageFriendList {
+    width: 50%;
+  }
+  /* #friendsHeader {
+    font-size: 120%;
+  } */
+}
+
+#UsersHeader {
+  font-size: 300%;
+  height: 50px;
+  margin-bottom: 20px;
+  font-family: 'Fredoka One', cursive;
+  background-color: none;
+  border: none;
+  position: relative;
+  z-index: 1.5;
+  cursor: pointer;
+}
+
+#notshownFriendsHeader {
+  font-size: 20px;
+  /* height: 50px; */
+  margin-bottom: 50%;
+  font-family: 'Fredoka One', cursive;
+  color: gray;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1.5;
+}
+
+@media screen and (min-height: 1350px) {
+  #friendsHeader {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  #friendsHeader {
+    font-size: 140%;
+  }
+
+  #notshownFriendsHeader {
+    font-size: 40%;
+  }
+}
+
+#allFriends {
+  width: 95%;
+  height: 80%;
+  overflow: scroll;
+}
+
+/* the avatar for one friend in Friend.jsx in FriendsList.jsx in ProfilePage.jsx, FeedPage.jsx and OtherPersonProfilePage.jsx */
+#friendPic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 0px;
+  float: left;
+  position: relative;
+  z-index: 1.5;
+}
+
+#friendsul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-height: 1350px) {
+  #friendPic {
+    float: center;
+    margin-left: 20px;
+  }
+}
+
+/* the outline for each friend's pic, name and chat button in Friend.jsx in FriendsList.jsx in ProfilePage.jsx, FeedPage.jsx and OtherPersonProfilePage.jsx */
+.friendOnList {
+  margin-left: 20px;
+  width: 90%;
+  font-family: 'Zilla Slab', serif;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* the chat button for an individual friend in Friend.jsx in FriendsList.jsx in ProfilePage.jsx, FeedPage.jsx and OtherPersonProfilePage.jsx */
+#chatFriend {
+  width: 80px;
+  height: 45px;
+  box-shadow: 1px 1px 1px 2px rgba (0, 0, 0, .3);
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+  float: right;
+  position: relative;
+  z-index: 1.5;
+  margin-top: -50px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+#chatFriend:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (min-height: 1350px)  {
+  #chatFriend {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    /* margin-left: 10px; */
+    width: 70px;
+    height: 35px;
+    padding-right: 10px;
+  }
+}
+/* end of chat button for individual friend */
+
+/* name of individual friend in Friend.jsx in FriendsList.jsx in ProfilePage.jsx, FeedPage.jsx and OtherPersonProfilePage.jsx */
+#friendName {
+  padding-left: 70px;
+}
+
+@media screen and (min-height: 1350px) {
+  #friendName {
+    padding-left: 15px;
+    margin-top: 50px;
+  }
+}
+
+#otherPersonPosts {
+  margin-left: 5%;
+  margin-right: -15%;
+  margin-top: 0px;
+  float: left;
+  width: 70%;
+}
+
+@media screen and (max-width: 1285px) {
+  #otherPersonPosts {
+    margin-right: -13%;
+  }
+}
+/*
+section of page devoted to posts in Posts.jsx and OtherPersonPosts.jsx */
+#posts {
+  margin-left: 20%;
+  margin-top: -350px;
+  float: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 1335px) {
+  #posts {
+    margin-top: -400px;
+    /* height: 580px;
+    width: 50%;
+    overflow: scroll; */
+  }
+}
+
+
+
+/* adding a liking feature as part of picture in FinishedPost.jsx and OtherPersonPost.jsx */
+.picWLike {
+  position: relative;
+  color: white;
+  width: 50%;
+}
+/*
+literal liking feature in Like.jsx in FinishedPost.jsx and OtherPersonPost.jsx */
+.bottom-right {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  bottom: -325px;
+  left: 38%;
+  font-size: 30px;
+  border-radius: 8px;
+  display: none;
+}
+ /* when you click */
+.bottom-right:focus {
+  background-color: green;
+}
+/* when you hover */
+.bottom-right:hover {
+  border-color: red;
+  border-width: medium;
+}
+
+@media screen and (max-width: 1000px) {
+  .bottom-right {
+    right: 47px;
+    bottom: -322px;
+  }
+}
+
+/* heart icon inside Like.jsx */
+#heart {
+  padding-right: 5px;
+  position: relative;
+  z-index: 3;
+}
+
+/* in OtherPersonPost.jsx */
+#timeStamp {
+  padding-top: 330px;
+  padding-right: 290;
+  margin-right: 75%;
+  color: black;
+  position: relative;
+  z-index: 1;
+  font-family: 'Zilla Slab', serif;
+}
+
+@media screen and (max-width: 1000px) {
+  #timeStamp {
+    padding-top: 250px;
+  /* padding-right: 0px; */
+  margin-right: 50%;
+  }
+}
+
+/* searchbar that appears in FriendList.jsx */
+.search-container {
+  float: left;
+  width: 100%;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+#searchFriends {
+  background-color: lightgray;
+  width: 100%;
+  border-radius: 16px;
+}
+
+@media screen and (min-height: 1350px) {
+  #searchFriends {
+    display: none;
+  }
+}
+
+#submitFriendsSearch {
+  width: 25%;
+  height: 40px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 6px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1.5;
+}
+
+#submitFriendsSearch:hover {
+  background-color: white;
+  color: black;
+}
+
+#searchFriendsField {
+  margin: 5px;
+  width: 60%;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1.5;
+}
+
+
+@media screen and (max-width: 1205px) {
+  #searchFriendsField {
+    width: 50%;
+  }
+}
+/* end of search bar stuff */
+
+/* title of section of Posts.jsx in ProfilePage.jsx that has your posts */
+.yourPosts {
+  color: black;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: -80px;
+  font-family: 'Fredoka One', cursive;
+}
+
+@media screen and (max-width: 1205px) {
+  .yourPosts {
+    color: black;
+    font-size: 40px;
+    width: 60%;
+
+  }
+}
+
+
+
+#profilePosts {
+  margin-top: 75px;
+  height: 580px;
+  width: 70%;
+  overflow: scroll;
+}
+
+/*
+search bar in ChatList.jsx in ChatPage.jsx */
+#searchChat {
+  background-color: lightgray;
+  width: 95%;
+  border-radius: 16px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 600px)  {
+  #searchChat {
+   display: none;
+  }
+}
+
+#submitChatSearch {
+  width: 22%;
+  height: 40px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1.5;
+  font-size: small;
+}
+
+#submitChatSearch:hover {
+  background-color: white;
+  color: black;
+}
+
+#searchChatField {
+  margin: 5px;
+  width: 50%;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1.5;
+}
+
+@media screen and (max-width: 600px)  {
+  #searchChatField {
+    display: none;
+  }
+}
+/* end of search in chat convos stuff */
+
+/* where the list of conversations and search bar is in ChatList.jsx in ChatPage.jsx */
+#chatListOutline {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  float: left;
+  margin-top: 70px;
+  /* margin-left: 20px; */
+  border-right: 4px solid grey;
+}
+
+
+@media screen and (max-width: 600px)  {
+  #chatListOutline {
+    height: 85%;
+    width: 60px;
+  }
+}
+
+#chatSection {
+  width: 60%;
+  height: 85%;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.recidReceiverContainer{
+  list-style: none;
+  background-color: rgba(221,221,211);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 50%;
+}
+
+.useridReceiverContainer{
+  list-style: none;
+  background-color: cornflowerBlue;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 50%;
+}
+
+/* label of page as a chat in ChatList.jsx in ChatPage.jsx */
+#chatHeader {
+  font-family: 'Fredoka One', cursive;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 50px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 925px)  {
+  #chatHeader {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 840px)  {
+  #chatHeader {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 760px)  {
+  #chatHeader {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  #chatHeader {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+}
+
+/* part of conversation shown that is going on right now in each ConvoInList.jsx in ChatList.jsx in ChatPage.jsx */
+#conversationShownInList {
+  font-size: small;
+  color: grey;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 600px)  {
+  #conversationShownInList {
+    display: none;
+  }
+}
+
+/* contains name and conversationShownInList to provide spacing in ConvoInList.jsx in ChatList.jsx in ChatPage.jsx */
+#wordsInfoConvo {
+  float: left;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 600px)  {
+  #chatFriendName {
+    margin-top: 15px;
+  }
+}
+
+/* avatar for friends you are chatting with in ConvoInList.jsx in ChatList.jsx in ChatPage.jsx */
+#chatFriendPic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 15px;
+  margin-left: 30px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 600px)  {
+  #chatFriendPic {
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    display: inline-block;
+  }
+}
+
+/* name of person you are chatting with in ConvoInList.jsx in ChatList.jsx in ChatPage.jsx */
+#chatFriendName {
+  margin-bottom: 0px;
+  width: 99.9%;
+  font-family: 'Zilla Slab', serif;
+}
+
+@media screen and (max-width: 600px)  {
+  #chatFriendName {
+    margin-top: 5px;
+    text-align: center;
+    float: none;
+    margin-left: -20px;
+  }
+}
+
+/* outline of section for each convo in ConvoInList.jsx in ChatList.jsx in ChatPage.jsx */
+.chatFriendOnList {
+  width: 300px;
+  height: 70px;
+  display: inline-block;
+  border-bottom: 2px solid grey;
+}
+
+@media screen and (max-width: 600px)  {
+  .chatFriendOnList {
+    width: 60px;
+    height: 80px;
+  }
+}
+
+/* section for all the conversations in the chatlist in ChatList.jsx in ChatPage.jsx */
+.convosInList {
+  background-color: white;
+  height: 87%;
+  width: 100%;
+  position: relative;
+  z-index: 1.5;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 600px)  {
+  .convosInList {
+    margin-top: -50px;
+    width: 60px;
+    height: 100%;
+  }
+}
+
+/* where in the middle you can see who you're talking to in Conversation.jsx */
+#convoHeader {
+  width: 70%;
+  height: 5%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 25px;
+  text-indent: 25px;
+  justify-content: unset;
+  font-size: smaller;
+}
+
+@media screen and (max-width: 600px)  {
+  #convoHeader {
+    margin-top: -20px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 350px)  {
+  #convoHeader {
+    margin-top: -20px;
+    width: 95%;
+  }
+}
+
+.convoHeaderName {
+  margin-right: -70%;
+  width: 100%;
+  display: inline-flex;
+  font-weight: normal;
+}
+
+.convoName {
+  font-weight: 10;
+  font-size: 2.8125vw;
+}
+
+@media screen and (max-width: 700px) {
+  .convoName {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .convoHeaderName {
+    margin-right: -310px;
+    display: inline-flex;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .convoHeaderName {
+    margin-right: -330px;
+    display: inline-flex;
+    font-weight: normal;
+  }
+}
+
+/* avatar in convoHeader in Conversation.jsx */
+#avatarConvo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 0px;
+  float: right;
+  margin-left: 90%;
+}
+
+@media screen and (max-width: 600px)  {
+  #avatarConvo {
+    height: 40px;
+    width: 40px;
+    margin-left: 350px;
+  }
+}
+
+@media screen and (max-width: 400px)  {
+  #avatarConvo {
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+}
+
+/* entire outline of Conversation.jsx */
+.convoOutline {
+  margin-top: -40px;
+  margin-left: 10px;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+@media screen and (max-width: 600px)  {
+  .convoOutline {
+    width: 75%;
+    height: 100%;
+    margin-top: 0px;
+  }
+}
+
+/* @media screen and (max-width: 350px)  {
+  .convoOutline {
+    width: 65%;
+    height: 100%;
+    margin-top: 0px;
+  }
+} */
+
+/* individual message of person you are chatting with of Message.jsx in Conversation.jsx */
+#messageRectangle {
+  height: 50px;
+  width: 100%;
+  opacity: 0.5;
+  margin-left: 10px;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+@media screen and (max-width: 600px)  {
+  #messageRectangle {
+  height: 40px;
+  width: 200px;
+  margin-left: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+}
+
+/* individual message you sent MyMessage.jsx in Conversation.jsx */
+#myMessageRectangle {
+  height: 50px;
+  width: 100%;
+  opacity: 0.5;
+  margin-left: 10px;
+  text-align: right;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+@media screen and (max-width: 600px)  {
+  #myMessageRectangle {
+  height: 40px;
+  width: 200px;
+  margin-right: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+}
+
+/* person you are chatting with's name per message of Message.jsx in Conversation.jsx */
+#messager {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: 'Zilla Slab', serif;
+}
+
+@media screen and (max-width: 600px)  {
+  #messager {
+    margin-bottom: -5px;
+    margin-left: -5px;
+  }
+}
+
+/* your name per message MyMessage.jsx in Conversation.jsx */
+#myMessager {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-right: 10px;
+  font-size: 15px;
+  text-align: right;
+  font-family: 'Zilla Slab', serif;
+}
+
+/* individual message text of person you are chatting with of Message.jsx in Conversation.jsx */
+#literalMessage {
+  background-color: lightgray;
+  color: black;
+  height: 80%;
+  width: 80%;
+  font-size: 12px;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: -20px;
+  text-align: left;
+  border-radius: 16px;
+  font-size: medium;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 600px)  {
+  #literalMessage {
+  height: 40px;
+  width: 150px;
+  margin-left: -10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+}
+
+/* your message text MyMessage.jsx in Conversation.jsx */
+#myLiteralMessage {
+  background-color: cornflowerblue;
+  color: black;
+  height: 80%;
+  width: 80%;
+  font-size: 12px;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: -20px;
+  text-align: left;
+  border-radius: 16px;
+  font-size: medium;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 600px)  {
+  #myLiteralMessage {
+  height: 40px;
+  width: 150px;
+  margin-right: 10px;
+  /* margin-top: 60px; */
+  margin-bottom: 10px;
+  }
+}
+
+/* where all the messages are located in Conversation.jsx */
+#messages {
+  margin-top: 80px;
+  width: 70%;
+  height: 70%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px)  {
+  #messages {
+  margin-top: 80px;
+  width: 80%;
+  height: 60%;
+  margin-left: 15px;
+  }
+}
+
+/* outline of textbox and send button for sending a new message in Conversation.jsx*/
+#enterMessage {
+  padding: 10px;
+  width: 70%;
+  height: 80px;
+  border-radius: 16px;
+  margin-top: -25px;
+  background-color: lightgray;
+  position: relative;
+  z-index: 1.5;
+}
+
+@media screen and (max-width: 600px)  {
+  #enterMessage {
+    /* padding: 10px; */
+    margin-top: 0px;
+    width: 90%;
+    height: 70px;
+    border-radius: 16px;
+    background-color: lightgray;
+    position: relative;
+    z-index: 1.5;
+  }
+}
+
+/* send button for sending new chat in Conversation.jsx */
+#sendMessage {
+  background-color: cornflowerblue;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  border-radius: 8px;
+  color: white;
+  width: 150px;
+  height: 45px;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: right;
+  margin-top: -15px;
+  font-size: large;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  #sendMessage {
+    margin-top: -20px;
+    margin-right: 5px;
+    height: 24px;
+    width: 100px;
+  }
+}
+
+
+.wrapperMessage {
+  float: right;
+  color: white;
+  }
+
+.wrapperMessage span {
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.wrapperMessage span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -7px;
+  right: -100px;
+  transition: 0.5s;
+}
+
+.wrapperMessage:hover span {
+  padding-right: 80px;
+}
+
+.wrapperMessage:hover span:after {
+  opacity: 1;
+  right: -30px;
+}
+/* end of send button code */
+
+/* textbox for sending new message in Conversation.jsx */
+#messageArea {
+  /* margin-top: -90px; */
+  resize: none;
+  float: left;
+  font-size: 14px;
+  width: 99%;
+  height: 35px;
+  text-align: initial;
+}
+
+@media screen and (max-width: 600px)  {
+  #messageArea {
+  resize: none;
+  float: left;
+  font-size: 14px;
+  width: 100%;
+  height: 45px;
+  text-align: initial;
+  }
+}
+
+
+@media screen and (max-width: 600px)  {
+#fileButton {
+  margin-top: 50px;
+  margin-left: 5px;
+  width: 10px;
+  height: 25px;
+  }
+}
+
+.fileIcon {
+  margin-left: -20px;
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .fileIcon {
+    margin-left: -15px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* info about who you are chatting with in ChatterInfo.jsx */
+#chatterInfoOutline {
+  width: 10%;
+  height: 100%;
+  background-color: white;
+  float: left;
+  margin-top: -70px;
+  margin-left: -120px;
+  border-left: 4px solid grey;
+  position: relative;
+  z-index: 0;
+}
+
+@media screen and (max-width: 600px)  {
+  #chatterInfoOutline {
+  display: none;
+  }
+}
+
+/* large avatar of who you are chatting with in ChatterInfo.jsx */
+#bigChatAvatar {
+  margin-top: 50px;
+  margin-left: 20%;
+  width: 150%;
+  height: 150%;
+  padding: 0px;
+  border-radius: 50%;
+}
+
+/* name presented big in ChatterInfo.jsx */
+#bigName {
+  font-family: 'Fredoka One', cursive;
+  color: black;
+  text-align: center;
+  width: max-content;
+  font-size: 220%;
+  width: 50%;
+  margin-left: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  #bigName {
+    margin-left: 30%;
+    font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #bigName {
+    margin-left: 20%;
+    font-size: 180%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #bigName {
+    margin-left: 10%;
+    font-size: 150%;
+  }
+}
+
+.chatFunctionality {
+  display: inline-block;
+}
+
+.viewProfileButton {
+  width: 180%;
+  height: 45px;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  transition: all 0.5s;
+  cursor: pointer;
+  /* padding-right: 50px; */
+  margin-left: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: large;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .viewProfileButton {
+    width: 150%;
+  }
+}
+
+/* block button in ChatterInfo.jsx */
+.block {
+  width: 180%;
+  height: 45px;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  transition: all 0.5s;
+  cursor: pointer;
+  /* margin-bottom: 300px; */
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  font-size: large;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .block {
+    width: 150%;
+  }
+}
+
+.block:hover {
+  background-color: white;
+  color: black;
+}
+
+.viewProfileButton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* the chat and friend buttons in OtherPersonFunctionality.jsx in OtherPersonBio.jsx in OtherPersonProfilePage.jsx */
+#chatFriendButton {
+
+  width: 100%;
+  height: 45px;
+  box-shadow: 100px 100px 100px 2000px rgba (0, 0, 0, .3);
+  transition: all 0.5s;
+  cursor: pointer;
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: medium;
+  text-align: center;
+  position: relative;
+  z-index: 1.5;
+}
+
+#chatFriendButton:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 1335px) {
+  #chatFriendButton {
+    width: 95%;
+  }
+
+}
+
+@media screen and (max-width: 1180px) {
+  #chatFriendButton {
+    width: 45%;
+    margin-left: 2.5%;
+  }
+}
+
+/* blocking another user in OtherPersonBio.jsx in OtherPersonProfilePage.jsx */
+#blockProfile {
+  height: 40px;
+  width: fit-content;
+  float: right;
+  margin-right: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  font-size: large;
+  cursor: pointer;
+}
+
+#blockProfile:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 720px) {
+  #blockProfile {
+    margin-right: 110px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #blockProfile {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #blockProfile {
+    margin-top: 12%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #blockProfile {
+    margin-top: -10%;
+    margin-right: 5%;
+  }
+}
+
+
+/* logo in LogoSide.jsx in FeedPage.jsx */
+#homeLogo {
+  border-radius: 16px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 101px;
+}
+
+@media screen and (max-width: 1205px){
+  /* #homeLogo {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+  } */
+}
+
+@media screen and (max-width: 600px){
+  #homeLogo {
+    display: none;
+  }
+}
+
+/* Column for logo and making a post side in LogoSide.jsx in FeedPage.jsx */
+#homeSide {
+  background-color: white;
+  float: left;
+  width: 15%;
+  margin-right: 20px;
+}
+
+.nonLogoSide {
+  /* background-color: white; */
+}
+
+@media screen and (max-width: 1205px){
+  #home {
+    /* display: none; */
+  }
+
+  .nonLogoSide {
+   margin-top: 50%;
+  }
+}
+
+/* search container for feed in FeedPage.jsx */
+.main-search-container {
+  float: left;
+  /* margin-top: 80px; */
+}
+
+.main-search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.main-search-container button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.main-search-container button:hover {
+  background: #ccc;
+}
+
+#searchHome {
+  opacity: 0.8;
+  background-color: lightgray;
+  width: 225%;
+  margin-top: 100px;
+  border-radius: 16px;
+}
+
+
+#searchAllField {
+  margin: 10px;
+  width: 75%;
+  height: 30px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  #searchHome {
+    width: 150%;
+  }
+
+  #searchAllField {
+    margin: 10px;
+    width: 65%;
+    height: 30px;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #searchHome {
+    margin-top: 40px;
+    width: 153%;
+  }
+
+  @media screen and (max-width: 450px) {
+    #searchHome {
+      width: 135%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    #searchHome {
+      width: 118%;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    #searchHome {
+      width: 105%;
+    }
+  }
+
+  #searchAllField {
+    margin: 10px;
+    width: 45%;
+    height: 20px;
+    border-radius: 15px;
+    font-size: small;
+  }
+}
+
+#submitAllSearch {
+  width: 100px;
+  height: 35px;
+  float: right;
+  background-color: rgb(87, 135, 255);;
+  color: white;
+  border-radius: 8px;
+}
+
+#submitAllSearch:hover {
+  background-color: white;
+  color: black;
+}
+/* end of feedpage search code */
+
+/* lining feed up properly in FeedPage.jsx */
+#centerOfFeed {
+  margin-top: -400px;
+  margin-left: 40%;
+  width: 70%;
+  height: 600px;
+  float: left;
+}
+
+@media screen and (max-width: 1365px) {
+  #centerOfFeed {
+    margin-left: 45%;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  #centerOfFeed {
+    /* margin-top: -100px;
+    margin-left: 0px; */
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  #centerOfFeed {
+    margin-top: -350px;
+    margin-left: 320px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #centerOfFeed {
+   margin-right: 40%;
+   margin-top: -250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #centerOfFeed {
+  margin-top: 100px;
+   margin-right: 0%;
+   width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #centerOfFeed {
+  margin-top: 100px;
+   margin-left: 10px;
+   margin-top: 20px;
+   width: 100%;
+  }
+}
+
+/* section of literal posts in FeedPage.jsx */
+#feedPosts {
+  float: left;
+  height: 100%;
+  width: 70%;
+  margin-left: -300px;
+  overflow: scroll;
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  #feedPosts {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #feedPosts {
+    width: 90%;
+  }
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+}
+
+#allFriends {
+  width: 120%;
+  margin-left: -50px;
+}
+
+/* Friend list responsive */
+@media screen and (max-width: 600px){
+  #friendListOutline {
+    margin-left: -250px;
+    /* position: fixed; */
+    /* top: 65%; */
+    margin-top: -750px;
+    height: 280px;
+    width: 180%;
+    /* white-space: nowrap; */
+  }
+
+  #allFriends {
+    margin-top: -10px;
+    float: left;
+
+    /* height: 110px;
+    padding-top: 20px;
+    height: 110px;
+    display: inline;
+    width: 100%;
+    overflow-y: hidden;
+    width: 100%;
+    display: inline-block; */
+  }
+
+  /* #friendsHeader {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 550px){
+  #friendListOutline {
+    margin-top: -830px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #friendListOutline {
+    margin-top: -800px;
+    height: 280px;
+  }
+}
+
+
+
+/* SignUp.js CSS section */
+.SignUp {
+  background-color: #d5e1df;
+  /* opacity: 0.6; */
+  border: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-width: 1px;
+  border-radius: 25px;
+  height: 520px;
+  width: 500px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signUpHeading {
+  font-family: 'Fredoka One', cursive;
+  color: rgba(0,0,0,0.65);
+  text-align: center;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.signUpHeading:hover{
+  color: cornflowerBlue;
+  transition: 0.5s;
+}
+
+.signUpInput {
+  background-color: white;
+  width: 153.5px;
+  height: 10px;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.signUpInputLine input {
+  float: center;
+}
+
+.signUpInputLineWidth input {
+  float: center;
+  width: 350px;
+}
+
+.signUp_otpButton {
+  border-radius: 4px;
+  background-color: #99c1f5;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  margin-right: 2%;
+}
+
+.signUp_otpButtonPre {
+  border-radius: 4px;
+  background-color: #99c1f5;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  margin-right: -10%;
+}
+
+.signUp_otpButtonPre:hover {
+  border: solid;
+  border-color: cornflowerblue;
+  color: cornflowerblue;
+}
+
+@media screen and (max-width: 600px)  {
+  .signUp_otpButton {
+    font-size: medium ;
+  }
+}
+
+.signUp_otpButtonPostClicked {
+  border-radius: 4px;
+  background-color: #99c1f5;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  /* margin-top: 10%; */
+}
+
+@media screen and (max-width: 600px)  {
+  .signUp_otpButtonPostClicked {
+    font-size: medium ;
+  }
+}
+
+.signUp_otpButton:hover {
+  border: solid;
+  border-color: cornflowerblue;
+  color: cornflowerblue;
+}
+
+.signUp_otpButtonPostClicked {
+  color: white;
+}
+
+.signUp_otpButtonPostClicked:hover {
+  border: solid;
+  border-color: cornflowerblue;
+  color: cornflowerblue;
+}
+
+#signUp2 {
+  margin: 0%;
+}
+
+.signUpButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.signUpButton span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.signUpButton:hover span {
+  padding-right: 25px;
+}
+
+.signUpButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.signupPage {
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px)  {
+  .SignUp {
+    height: 550px;
+    width: 280px;
+  }
+
+  .signUpInput {
+    width: 200px;
+    margin: 5px;
+  }
+
+  .signUpInputLineWidth {
+    margin-top: -5px;
+  }
+
+  .signUpInputLineWidth input {
+    width: 200px;
+    margin: -2.5px;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .SignUp {
+    height: 550px;
+    width: 280px;
+    transform: translate(-50%, -60%);
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .SignUp {
+    height: 520px;
+    width: 500px;
+  }
+  .signUpInputLineWidth input{
+    width: 80%;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .SignUp {
+    height: 520px;
+    width: 500px;
+    transform: translate(-50%, -80%);
+  }
+
+}
+
+@media screen and (min-height: 1300px) {
+  .SignUp {
+    transform: translate(-50%, -110%);
+  }
+}
+
+#signUpComplete {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*FriendList Outline Begins*/
+@media screen and (max-width: 450px){
+  #friendListOutline {
+    height: 220px;
+    margin-top: -750px;
+  }
+
+  #postingButton {
+    margin-top: 175px;
+    margin-left: 7%;
+    height: 40px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px){
+  #friendListOutline {
+    top: 10%;
+  }
+}
+
+.otherProfileFriendList {
+  margin-top: -150px;
+    width: 25%;
+  float: right;
+  /* background-color: red; */
+}
+
+.FeedPageFriendList {
+  width: 25%;
+  float: right;
+}
+
+.profilePageFriendList {
+  margin-top: -150px;
+  width: 28%;
+  float: right;
+}
+
+.profilePagePosts {
+  margin-top: 25%;
+  width: 70%;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 1285px) {
+  .FeedPageFriendList {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .FeedPageFriendList {
+    margin-top: 100px;
+    width: 40%;
+  }
+
+  .otherProfileFriendList {
+    margin-top: -200px;
+  }
+
+  .profilePageFriendList {
+    margin-top: 200px;
+    width: 30%;
+  }
+
+}
+
+@media screen and (max-width: 1205px) {
+
+  .otherProfileFriendList {
+    margin-top: -300px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .FeedPageFriendList {
+    margin-top: -400px;
+    width: 40%;
+    margin-left: 100%;
+  }
+
+  .otherProfileFriendList {
+    /* margin-top: 150px; */
+    /* background-color: red; */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .otherProfileFriendList {
+    width: 40%;
+    margin-top: -530px;
+  }
+
+  .yourPosts {
+    font-size: 40px;
+  }
+}
+
+
+
+@media screen and (max-width: 450px) {
+  #otherPersonPosts {
+    margin: 0%;
+    margin-top: -40%;
+    margin-left: 10%;
+    width: 110%;
+  }
+
+  .otherProfileFriendList {
+    width: 100%;
+    /* margin-top: -100px; */
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .FeedPageFriendList {
+    margin-top: -450px;
+    width: 40%;
+    height: 850px;
+    margin-left: 100%;
+  }
+
+  .otherProfileFriendList {
+    margin-top: -920px;
+    width: 40%;
+    height: 1000px;
+    margin-left: 100%;
+  }
+
+  .bio {
+    margin-left: 30px;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .FeedPageFriendList {
+    display: none;
+  }
+} */
+
+
+@media screen and (max-width: 1335px) {
+  .profilePageFriendList {
+    margin-top: -150px;
+    width: 28%;
+  }
+
+  .profilePagePosts {
+    margin-top: 400px;
+  }
+}
+
+@media screen and (min-height: 1350px) {
+  .FeedPageFriendList {
+    margin-top: 0px;
+    width: 10%;
+    height: 1360px;
+    margin-left: 200px;
+    margin-right: 10%;
+  }
+
+  .otherProfileFriendList {
+    margin-top: -150px;
+    width: 10%;
+    height: 1360px;
+    margin-left: 200px;
+    margin-right: 10%;
+  }
+
+  .bio {
+    width: 70%;
+    margin-left: 40px;
+  }
+
+  #otherPersonPosts {
+    width: 70%;
+  }
+
+  #profilePosts {
+    width: 100%;
+    height: 940px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  #bio {
+    margin-left: -40px;
+  }
+
+  .FeedPageFriendList {
+    margin-top: 100px;
+    width: 35%;
+  }
+
+  #otherPersonPosts {
+    margin-top: -150px;
+  }
+
+  .otherProfileFriendList {
+    width: 40%;
+    /* margin-top: 0%; */
+  }
+
+  .profilePagePosts {
+    margin-left: -100px;
+    margin-top: 700px;
+  }
+
+  .profilePageFriendList {
+    width: 40%;
+    margin-top: -250px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .profilePageFriendList {
+    margin-top: -120px;
+    height: 100%
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .profilePageFriendList {
+    margin-top: -160px;
+    height: 100%
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .profilePageFriendList {
+    margin-top: -240px;
+    width: 40%;
+    height: 100%
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .profilePageFriendList {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profilePageFriendList {
+    margin-top: -250px;
+    height: 200px;
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .profilePageFriendList {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profilePageFriendList {
+    margin-top: -350px;
+   width: 55%;
+   height: 100px;
+  }
+
+  #friendListOutline{
+    height:220px;
+  }
+
+  .myBio {
+    margin-top: 220px;
+  }
+
+  .profilePagePosts {
+    margin-top: 800px;
+  }
+
+  .otherProfileFriendList {
+    width: 100%;
+    /* margin-top: -400px; */
+  }
+}
+
+.underline {
+  margin-top: -25px;
+  position: relative;
+  z-index: 1.2;
+}
+
+
+@media screen and (max-width: 600px) {
+  #bio {
+    margin-left: 0px;
+  }
+
+  .profilePagePosts {
+    margin: 0%;
+    margin-top: 750px;
+    margin-left: -100px;
+    width: 100%;
+  }
+
+  #profilePosts {
+    width: 95%;
+  }
+
+  #placeholderPic {
+    margin-top: 70px;
+  }
+
+  #myPlaceholderPic {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profilePagePosts {
+    margin: 0%;
+    margin-top: 850px;
+    margin-left: -50px;
+    width: 100%;
+  }
+
+  #profilePosts {
+    width: 85%;
+  }
+
+  #placeholderPic {
+    margin-top: -30px;
+  }
+
+  #myPlaceholderPic {
+    margin-top: -30px;
+  }
+
+  .otherProfileFriendList {
+    width: 100%;
+
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .profilePageFriendList {
+    margin-top: -930px;
+    height: 1000px;
+  }
+
+  #profilePosts {
+    height: 770px;
+  }
+
+  .myBio {
+    margin-left: 100px;
+  }
+
+  .otherProfileFriendList {
+    margin-top: -1400px;
+    width: 40%;
+  }
+
+  .FeedPageFriendList {
+    margin-top: -630px;
+    width: 40%;
+    height: 830px;
+  }
+}
+
+@media screen and (max-width: 341px) {
+  .profilePageFriendList {
+    margin-top: -400px;
+  }
+}
+
+@media screen and (min-height: 1350px) {
+  .profilePageFriendList {
+    width: 10%;
+    margin-right: 40px;
+    margin-top: 600px;
+    height: 1370px;
+  }
+
+  #profilePosts {
+    height: 1000px;
+  }
+  .myBio {
+    margin-left: 140px;
+  }
+
+  .otherProfileFriendList {
+    margin-top: -180px;
+    width: 10%;
+  }
+
+  .FeedPageFriendList {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .FeedPageFriendList {
+    width: 55%;
+    margin-top: 10px;
+  }
+
+  #allFriends {
+    width: 100%;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #centerOfFeed {
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #centerOfFeed {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: -57px;
+  }
+
+  #feedPosts {
+    width: 95%;
+    margin-left: 0px;
+  }
+
+  #placeholderPic {
+    margin-top: 70px;
+  }
+
+  #myPlaceholderPic {
+    margin-top: 70px;
+  }
+
+  #otherPersonPosts {
+    margin-left: 25px;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #centerOfFeed {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  /* #feedPosts {
+    width: 95%;
+    margin-left: 0px;
+  } */
+}
+
+@media screen and (max-width: 505px) {
+  .profilePagePosts {
+    margin-left: -85px;
+  }
+
+  #placeholderPic {
+    margin-top: -30px;
+  }
+
+  #myPlaceholderPic {
+    margin-top: -30px;
+  }
+  #centerOfFeed {
+    margin-top: 40px;
+  }
+}
+
+.email_button {
+  width: 100px;
+}
+
+.whereButton {
+  float: right;
+  cursor: pointer;
+}
+
+.wherePreClickedButton {
+  float: right;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+.whereTab {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  transform: rotate(45deg);
+
+  float: right;
+  margin-right: -1%;
+  margin-top: 3px;
+}
+
+.whereTextBox {
+  position: relative;
+  z-index: 2;
+  margin-right: -20%;
+  margin-top: -10%;
+  float: right;
+  width: 150px;
+  height: 80px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.whereText {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.otpTextBox {
+  position: relative;
+  z-index: 2;
+  margin-right: -20%;
+  margin-top: -10%;
+  float: right;
+  width: 150px;
+  height: 110px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: left;
+}
+
+#placeholderPic {
+  margin-top: -30px;
+}
+
+#myPlaceholderPic {
+  margin-top: -30px;
+}
+
+
+.email_button {
+width: 100px;
+}
+
+.placeholderTextBox {
+background-color: rgb(184, 205, 243);
+color: rgb(78, 72, 72);
+border-bottom: solid white 30px;
+border-left: solid rgb(78, 72, 72) 20px;
+width: 90%;
+height: 210px;
+float: left;
+text-align: left;
+font-family: 'Zilla Slab', serif;
+margin-left: -40%;
+margin-top: 20%;
+border-radius: 16px;
+}
+
+.postText {
+margin-left: 10%;
+}
+
+@media screen and (max-width: 1205px) {
+  .placeholderTextBox {
+    width: 80%;
+    margin-top: 30%;
+  }
+  }
+
+@media screen and (max-width: 1000px) {
+.placeholderTextBox {
+  width: 160%;
+  margin-top: -20%;
+}
+}
+
+@media screen and (max-width: 600px) {
+.placeholderTextBox {
+  width: 160%;
+  margin-top: 25%;
+}
+}
+
+@media screen and (max-width: 505px) {
+  .placeholderTextBox {
+    width: 160%;
+    margin-top: 25%;
+  }
+  }
+
+  @media screen and (max-width: 600px) {
+    #otherPersonPosts {
+      margin: 0%;
+      margin-top: -30%;
+      /* margin-left: 10%; */
+      width: 110%;
+    }
+
+    .otherProfileFriendList {
+      width: 27%;
+      margin-top: -300px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .otherProfileFriendList {
+      margin-top: -230px;
+    }
+
+    .otherFunctionality {
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .otherFunctionality {
+      width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .otherFunctionality {
+      width: 100%;
+    }
+
+    .otherProfileFriendList {
+      margin-top: -400px;
+      height: 180px;
+      width: 55%;
+    }
+
+    #otherPersonPosts {
+      margin-top: -200px;
+    }
+  }
+
+.postCheck {
+  margin-top: 200px;
+  margin-left: -355px;
+  height: 30px;
+  background-color: white;
+  border: solid 2px;
+  border-color: red;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  font-size: 15px;
+  z-index: 1;
+  font-size: small;
+}
+
+@media screen and (max-width: 800px) {
+  .postCheck {
+    width: 300px;
+    height: fit-content;
+    margin-left: -300px;
+    margin-top: 170px;
+  }
+}
+
+.editAvatarButton {
+  background-color: gray;
+    opacity: 0.5;
+    width: 200px;
+    height: 50px;
+    margin-top: -100px;
+    /* margin-left: -900px; */
+    float: center;
+    position: relative;
+    z-index: 1.5;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    /* margin-right: 30px; */
+}
+
+.editAvatarButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.editAvatar {
+  /* background-color: red; */
+  flex: 0 0 60%;
+  width: 30%;
+  margin-left: 20%;
+}
+
+.settingsInfo {
+  margin: 0;
+  float: left;
+  /* background-color: teal; */
+  width: 30%;
+  margin-left: 55%;
+  margin-top: -350px;
+}
+
+.settingsMinusTitle {
+  margin-top: 150px;
+  margin-left: -100px;
+}
+
+@media screen and (max-width: 1212px) {
+  .editAvatar {
+    margin-left: 43.5%;
+    float: center;
+    width: 100%;
+  }
+
+  .settingsInfo {
+    width: 100%;
+    margin-left: 43.5%;
+    margin-top: 0px;
+  }
+
+  .settingsMinusTitle {
+    margin-left: 27%;
+    width: 25%;
+  }
+}
+
+.langHeader {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.chosenlang {
+  width: 100px;
+  height: 50px;
+  border: solid cornflowerblue 8px;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1.5;
+}
+
+.unchosenlang {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1.5;
+}
+
+.currentPic {
+  border-radius: 50%;
+  width: 80%;
+  float: left;
+  margin-top: -40px;
+  /* margin-bottom: 50px; */
+}
+
+.optionPics {
+  float: right;
+  margin-right: 25%;
+  margin-top: -30px;
+  width: 10%;
+  height: 200px;
+  overflow: scroll;
+}
+
+.optionPic {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.currentLabel {
+  margin-top: 165px;
+  margin-left: -45px;
+  float: center;
+}
+
+.current {
+  margin-left: 15%;
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .optionPics {
+    height: 100px;
+  }
+
+  .currentLabel {
+    margin-top: 80px;
+    margin-left: -25px;
+    font-size: small;
+  }
+.deleteAccButton {
+  background: red;
+  color: white;
+}
+
+}
+#deleteAccButton:hover {
+  border-right: #4e4848;
+  border-bottom: #4e4848;
+}
+
+@media screen and (max-width: 600px) {
+  #deleteAccButton {
+    width: 80px;
+  }
+}
+
+
+.deleteWarning {
+  text-align: left;
+  margin-left: 20px;
+  font-weight: lighter;
+
+}
+
+.deleteWarningInstructions {
+  text-align: left;
+  margin-left: 20px;
+  /* font-weight: 900; */
+}
+
+.deleteWarningString {
+  text-align: center;
+  font-weight: 900;
+  color: red;
+}
+
+#confirmDeleteButton {
+  border-radius: 4px;
+  background-color: #99c1f5;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 400px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#confirmDeleteButton:hover {
+  border: solid;
+  border-color: red;
+  background-color: white;
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  #confirmDeleteButton {
+    width: 200px;
+    height: fit-content;
+    font-size: 13px;
+  }
+}
+
+.deleteCommentPointer {
+  width: 7%;
+  float: right;
+  margin-top: -50px;
+  margin-right: 50px;
+}
+
+.noPosts {
+  margin-top: 50px;
+}
+
+.feedOptions {
+  margin-top: 50px;
+}
+
+.onFeedOption {
+  background-color: white;
+  border: solid cornflowerblue 6px;
+  width: 40%;
+  height: 50px;
+  border-radius: 8px;
+  font-size: large;
+  cursor: pointer;
+  position: relative;
+  z-index: 1.5;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.nonFeedOption {
+  background-color: white;
+  color: grey;
+  /* border: solid cornflowerblue 4px; */
+  width: 40%;
+  height: 50px;
+  border-radius: 8px;
+  font-size: large;
+  cursor: pointer;
+  position: relative;
+  z-index: 1.5;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.notOptions {
+  overflow: scroll;
+}

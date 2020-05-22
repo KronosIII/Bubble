@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Henry Dacres </title>
+    <style type="text/css">
+<!--
+.style1 {font-family: Arial, Helvetica, sans-serif}
+-->
+</style> </head>
+  <body style=" background-color: white;">
+    <h2 class="style1"> Projects for GEO120: <i>Maps </i> </h2>
+    <p class="style1"> <img src="Photo.jpg" height="128"> <strong>Henry's
+        Page</strong> </p>
+    <p class="style1"><b>My colleagues</b><br>
+      <a href="http://www.buffalo.edu/%7Ehlin43/"> Hui </a> || <a href="http://www.buffalo.edu/%7Emesharia">
+        Mesharia </a> || <a href="http://www.buffalo.edu/%7Ezhiyuanw/">
+        Zhiyuanwen </a> <br>
+    </p>
+    <hr>
+    <h3 class="style1">My Projects</h3>
+    <ul>
+      <li class="style1">Project 1:<a href="index.html"> My Webpage</a> <br>
+      </li>
+      <li class="style1">Project 2:<a href="project2.html"> Google Earth
+          orthorectification</a><br>
+      </li>
+      <li class="style1">Project 3:<a href="project3.html"> My Map</a><br>
+      </li>
+    </ul>
+    <hr>
+  </body>
+</html>
