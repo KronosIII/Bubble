@@ -1,26 +1,14 @@
 **CSE 370 - 
 Designing a Social Media App**
 
-**Team Name:**
-Team Tree Kings
-
-**Group Members:**
-Clara Cook, Ralph Huang, Anant Patni, Henry Dacres, Daniel Bielli
-
-**Unique things:**
-Anant: App on the App Store
-Clara: I have pet a walrus.
-Danny: I have a dog, cat, birds and fish. No walrus doe
-Henry:  I am from the Bronx.
-Ralph: My name starts with a R.
 
 **Project Description:**
 Bubble is a location-based social media product that allows the users to venture into other places from any location in the world. Want to find out what’s going on nearby? Excited to meet new people with similar/not similar interests? Hungry and not sure where to eat? Bubble comes to the rescue with an all-in-one application that will act as your social hub. Bubble will be available for the Web and Mobile Platforms - iOS & Android. 
 
 **Demographic:**
-We are gearing our product towards people willing to make new friends and explore new places.
+Gearing our product towards people willing to make new friends and explore new places.
 
-**Problem we are trying to solve:**
+**Problems to be solve:**
 In our technology obsessed age, many people of the millennial and gen-Z populations are often accused of becoming less social, of being too absorbed by their technology. Our app, however, is a technology geared towards this age group that serves as a facilitator of social interaction. It is true that sometimes we do not know what or whom is right outside our very door, but with Bubble, the fear one must overcome to combat one’s social anxiety only to realize that you have nothing in common, will be completely superseded by the app that opens new doors to new friendships.
 
 **User Stories:**
